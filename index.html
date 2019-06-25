@@ -33,7 +33,7 @@
     // code from the next step will go here
     map.on('click', function(e) {
   var features = map.queryRenderedFeatures(e.point, {
-    layers: ['new-villages-malaccapenang'] // replace this with the name of the layer
+    layers: ['new-villages-malaccapenang'] + ['new-villages-johore'] // replace this with the name of the layer
   });
 
   if (!features.length) {
